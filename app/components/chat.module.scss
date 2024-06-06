@@ -43,7 +43,7 @@
 }
 
 .chat-input-actions {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
 
   .chat-input-action {
@@ -342,7 +342,7 @@
     pointer-events: none;
 
     .chat-input-actions {
-      display: flex;
+      display: none;
       flex-wrap: nowrap;
     }
   }
