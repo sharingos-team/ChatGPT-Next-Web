@@ -169,6 +169,7 @@ const anthropicModels = [
 ];
 
 export const DEFAULT_MODELS = [
+  /*
   ...openaiModels.map((name) => ({
     name,
     available: true,
@@ -178,6 +179,7 @@ export const DEFAULT_MODELS = [
       providerType: "openai",
     },
   })),
+  */
   ...googleModels.map((name) => ({
     name,
     available: true,
