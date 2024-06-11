@@ -382,8 +382,8 @@ const en: LocaleType = {
     },
   },
   Store: {
-    DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    DefaultTopic: "Wealth Assiatant",
+    BotHello: "I am WealthWise's intelligent AI customer service Wise. You can ask me anything about wealth management!",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
