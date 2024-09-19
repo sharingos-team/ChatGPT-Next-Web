@@ -43,6 +43,7 @@ import {
   SubmitKey,
   useChatStore,
   BOT_HELLO,
+  BOT_SYSTEM,
   createMessage,
   useAccessStore,
   Theme,
@@ -947,12 +948,16 @@ function _Chat() {
 
   if (
     context.length === 0 &&
-    session.messages.at(0)?.content !== BOT_HELLO.content
+    session.messages.at(1)?.content !== BOT_HELLO.content &&
+    session.messages.at(0)?.content !== BOT_SYSTEM.content
   ) {
     const copiedHello = Object.assign({}, BOT_HELLO);
+    const copiedSystem = Object.assign({}, BOT_SYSTEM);
     if (!accessStore.isAuthorized()) {
       copiedHello.content = Locale.Error.Unauthorized;
+      copiedSystem.content = Locale.Error.Unauthorized;
     }
+    context.push(copiedSystem);
     context.push(copiedHello);
   }
 
