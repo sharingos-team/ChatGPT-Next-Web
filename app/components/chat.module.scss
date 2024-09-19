@@ -310,6 +310,10 @@
   display: flex;
   flex-direction: row;
 
+  &:first-child {
+    display: none;
+  }
+
   &:last-child {
     animation: slide-in ease 0.3s;
   }
