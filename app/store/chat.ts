@@ -67,6 +67,10 @@ export const BOT_HELLO: ChatMessage = createMessage({
   role: "assistant",
   content: Locale.Store.BotHello,
 });
+export const BOT_SYSTEM: ChatMessage = createMessage({
+  role: "system",
+  content: Locale.Store.BotSystem ? Locale.Store.BotSystem : '-',
+});
 
 function createEmptySession(): ChatSession {
   return {
